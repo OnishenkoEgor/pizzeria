@@ -1,0 +1,44 @@
+.header {
+    background-color:#121618;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
+        text-decoration: none;
+        font-family: "Josefin Sans", Arial, sans-serif;
+        p{
+            color: #fff;
+            font-size: 24px;
+        }
+       
+        span{
+            text-transform: uppercase;
+            color:#fac564;
+            font-size: 11px;
+            letter-spacing: 1.8px;
+        }
+    }
+    &__link {
+        display: flex;
+        margin-right: 40px;
+        font-size: 14px;
+        color: rgb(209, 209, 209);
+        text-decoration: none;
+        letter-spacing: .6px;
+        transition: .3s all;
+    }
+    &__link:hover{
+        color:#fac564;
+    }
+    &__cart {
+        width: 20px;
+        margin-right: 10px;
+    }
+}
