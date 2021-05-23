@@ -46,12 +46,10 @@
   "order": [
     
   ],
-  "slides":[
-    {
-      "picture":"img.jpg",
-      "title":"title",
-      "subtitle":"subtitle"
-
-    }
-  ]
+  "mainInfo":
+   {
+     "image":"https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FmZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+     "header":"WELCOME TO PIZZA RESTAURANT",
+     "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras luctus, elit vel commodo cursus, metus sem aliquet odio, vitae porta odio purus eget ipsum. Ut molestie arcu sit amet nibh sagittis, vel dignissim nunc iaculis. Nulla erat quam, mollis sed ante vel, blandit dapibus purus. Mauris lacinia risus eget risus dictum elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor eleifend lacus sit amet tempus. Nunc ut tempor ante. Donec leo diam, vulputate id lacus sit amet, convallis aliquet arcu. Nunc vel suscipit arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+   } 
 }

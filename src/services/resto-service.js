@@ -5,6 +5,10 @@ export default class RestoService {
 
         return response
     }
+    async getMainInfo(){
+        let response = await this._getData('mainInfo')
+        return response
+    }
     async getSingleItem(id) {
         let response = this._getData(`menu/${id}`);
         return response

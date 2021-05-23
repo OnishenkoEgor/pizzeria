@@ -12,7 +12,7 @@ class MainPreviewList extends Component {
     }
     componentDidUpdate(prevProps) {
         if (prevProps.menu !== this.props.menu && this.props.menu.length>0) {
-            this.setState({ menu: this.menuToggler(this.props.menu)},console.debug(this.state.menu))
+            this.setState({ menu: this.menuToggler(this.props.menu)})
         }
     }
     menuToggler = (menu) => {
