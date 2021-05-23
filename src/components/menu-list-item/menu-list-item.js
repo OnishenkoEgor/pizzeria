@@ -8,14 +8,18 @@ const MenuListItem = (props) => {
     return (
 
         <li className="menu__item">
-            <div className="menu__title">{title}</div>
+            <div className="menu__image">
+                <img className="menu__img" src={url} alt={title}></img>
+            </div>
             <img className="menu__icon" src={icon} alt={title}></img>
-            <img className="menu__img" src={url} alt={title}></img>
-            <div className="menu__category">Category: <span>{category}</span></div>
-            <div className="menu__price">Price: <span>{price}</span></div>
-            <button
-                onClick={() => addItemToCart(id)}
-                className="menu__btn">Add to cart</button>
+            <div className="menu__info">
+                <div className="menu__title">{title}</div>
+                <div className="menu__category">Category: <span>{category}</span></div>
+                <div className="menu__price">Price: <span>{price} $</span></div>
+                <button
+                    onClick={() => addItemToCart(id)}
+                    className="menu__btn">Order</button>
+            </div>
         </li>
 
     )
@@ -39,7 +43,7 @@ const setIcon = (item) => {
         case 'pizza':
             return {
                 ...item,
-                icon: 'https://previews.123rf.com/images/djvstock/djvstock1901/djvstock190102152/126397758-pizza-icon-over-white-background-colorful-design-vector-illustration.jpg'
+                icon: 'https://pngicon.ru/file/uploads/picca.png'
             };
         default: return item
     }

@@ -1,50 +1,68 @@
-.menu {
-    &__item {
-        position: relative;
-        width: 350px;
-        min-height: 400px;
-        background-color: #fff;
-        box-shadow: 5px 5px 45px rgba(256,256,256,.1);
-        border-radius: 8px;
-        padding: 20px;
-        margin-right: 40px;
-        margin-bottom: 40px;
-    }
-    &__title {
-        font-size: 22px;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    &__icon{
+.menu__item{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    background-color: rgba(0,0,0,.3);
+    color:#fff;
+}
+.menu__item:nth-child(4n-2) .menu__info, .menu__item:nth-child(4n-1) .menu__info{
+    order:-1;
+}
+
+.menu__image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    img{
         position: absolute;
-        top:5px;
-        left:5px;
-        width: 50px;
-        height: 50px;
+        transition: .3s all;
+        width: auto;
+        height: 100%;
     }
-    &__img {
-        width: calc(100% + 40px);
-        transform: translateX(-20px);
-        height: 240px;
-        object-fit: cover;
-        margin-bottom: 20px;
+    &:hover img{
+        transform: scale(1.2);
     }
-    &__category, &__price {
-        font-size: 18px;
-        font-weight: 300;
-        margin-bottom: 10px;
-        span {
-            font-weight: 700;
-        }
+}
+.menu__icon{
+    position: absolute;
+    width: 40px;
+    right: 10px;
+    top: 10px;
+}
+.menu__info{
+    padding: 20px 45px 20px 20px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+.menu__title{
+    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    color:#fff;
+}
+.menu__category, .menu__price{
+    color:gray;
+
+    span{
+        color:#fac564;
     }
-    &__btn {
-        width: 150px;
-        height: 40px;
-        border: none;
-        background-color: #29a745;
-        border-radius: 4px;
-        color: #fff;
-        font-size: 16px;
-        cursor: pointer;
+}
+.menu__btn{
+    color:#fff;
+    cursor: pointer;
+    border:1px solid #fff;
+    padding: 5px 15px;
+    font-family: "Poppins", sans-serif;
+    background-color: rgba(0,0,0,0);
+    transition: .3s all;
+    &:hover{
+        background-color: #fac564;
+        border:1px solid #fac564;
+        color:#000;
     }
 }

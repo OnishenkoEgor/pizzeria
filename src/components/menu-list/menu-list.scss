@@ -1,10 +1,5 @@
-.menu {
-    &__list {
-        min-height: 100vh;
-        padding: 50px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-wrap: wrap;
-    }
+.menu__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 230px;
 }

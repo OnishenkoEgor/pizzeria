@@ -10,10 +10,8 @@ class MenuList extends Component {
         return (
             <ul className="menu__list">
                 {
-                    menuItems.map(item => {
-                        return (
-                            <MenuListItem key={item.id} menuItem={item} addItemToCart={addItemToCart} />
-                        )
+                    menuItems.map((item, index) => {
+                        return index < 6 ? <MenuListItem key={item.id} menuItem={item} addItemToCart={addItemToCart} /> : null;
                     })
                 }
             </ul>

@@ -34,6 +34,13 @@
       "url": "https://i.cbc.ca/1.4491288.1516208229!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/cowboysteak.jpg",
       "category": "meat",
       "id": 5
+    },
+    {
+      "title": "Chopped Salad",
+      "price": 15,
+      "url": "https://www.nospoonnecessary.com/wp-content/uploads/2020/05/Chopped-Italian-Salad-Photos-106-1.jpg",
+      "category": "salads",
+      "id": 6
     }
   ],
   "order": [

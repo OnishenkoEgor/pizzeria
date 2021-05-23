@@ -5,7 +5,7 @@ import Error from '../error';
 import Spinner from '../spinner';
 import MenuList from '../menu-list';
 import WithRestoService from '../hoc';
-
+import './menu-list-wrapper.scss';
 class MenuListWrapper extends Component {
 
     componentWillMount() {
@@ -23,11 +23,18 @@ class MenuListWrapper extends Component {
 
     render() {
         let { menuItems, loading, error } = this.props;
-        return (error ?
+        return (
+            <div className="menu">
+                <h2>Our menu</h2>
+                <p>There could be a nice description for our menu here</p>
+            {
+            error ?
             <Error /> :
             loading ?
                 <Spinner /> :
                 <MenuList menuItems={menuItems} addItemToCart={this.props.addItemToCart} />
+            }
+            </div>
         )
     }
 };
