@@ -1,28 +1,23 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './main-info.scss';
-const MainInfo = (props)=>{
-    const [text,setText] = useState('');
-
-    useEffect(()=>{
-        setText()
-    })
-    
-    return(
+const MainInfo = (props) => {
+    console.log(props.text)
+    return (
         <div className="main-info">
             {
-                props.info.image &&
-                    <div className="main-info-image">
-                        <img src={props.info.image} alt=""/>
-                    </div>
+                props.image &&
+                <div className="main-info-image">
+                    <img src={props.image} alt="" />
+                </div>
             }
             <div className="main-info-text">
-                <h2 className="main-info-title">{props.info.header}</h2>
-                <p className="main-info-description">{text}</p>
+                <h2 className="main-info-title">{props.header}</h2>
+                <p className="main-info-description">{props.text}</p>
             </div>
         </div>
     )
 }
 
-export{
+export {
     MainInfo
 }
